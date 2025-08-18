@@ -101,50 +101,10 @@ The AI opponent uses intelligent strategy:
 4. **Corners**: Prefers corner positions
 5. **Random**: Takes any available move as fallback
 
-
-### Game Logic
-Extend the `TicTacToe` class in `script.js`:
-- Add new game modes
-- Modify AI difficulty
-- Add sound effects
-- Implement online multiplayer
-
-## 🔧 Advanced Features
-
-### Game State Management
-```javascript
-// Export current game state
-const gameState = game.exportGameState();
-
-// Import saved game state
-game.importGameState(gameState);
-
-// Get game statistics
-const stats = game.getGameStats();
-```
-
 ### Keyboard Shortcuts
 - `1-9`: Make move in corresponding cell
 - `Enter`: Start game (in setup screen)
 - `Escape`: Close modal (when implemented)
-
-
-## 🚀 Performance
-
-- **Lightweight**: No external dependencies
-- **Fast Loading**: Optimized CSS and JavaScript
-- **Smooth Animations**: Hardware-accelerated transitions
-- **Memory Efficient**: Proper cleanup and event handling
-
-## 🔮 Future Enhancements
-
-- 🔊 Sound effects and background music
-- 🌐 Online multiplayer support
-- 📊 Advanced statistics and analytics
-- 🎨 Theme customization
-- 💾 Cloud save functionality
-- 🏅 Achievement system
-- 📱 Progressive Web App (PWA) features
 
 ## 🤝 Contributing
 
@@ -155,9 +115,6 @@ Feel free to contribute to this project:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ## 🎯 Edge Cases Handled
 
