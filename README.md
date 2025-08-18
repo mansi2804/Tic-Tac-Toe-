@@ -17,7 +17,7 @@ A beautiful, responsive, and feature-rich tic-tac-toe game built with modern web
 - **Modern Gradient Design** - Eye-catching color schemes
 - **Interactive Elements** - Hover effects and button animations
 - **Modal Dialogs** - Elegant game result presentations
-
+ 
 ### 🏆 Game Features
 - **Score Tracking** - Persistent score across multiple rounds
 - **Player Customization** - Custom player names
