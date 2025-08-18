@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <i class="fas fa-gamepad"></i>
+                Tic Tac Toe
+            </h1>
+            <div class="game-mode-selector">
+                <button id="pvp-mode" class="mode-btn active">
+                    <i class="fas fa-users"></i>
+                    Player vs Player
+                </button>
+                <button id="pvc-mode" class="mode-btn">
+                    <i class="fas fa-robot"></i>
+                    Player vs AI
+                </button>
+            </div>
+        </header>
+
+        <main class="game-container">
+            <div class="player-setup" id="player-setup">
+                <div class="player-input">
+                    <label for="player1-name">Player 1 (X):</label>
+                    <input type="text" id="player1-name" placeholder="Enter name" maxlength="15">
+                </div>
+                <div class="player-input">
+                    <label for="player2-name">Player 2 (O):</label>
+                    <input type="text" id="player2-name" placeholder="Enter name" maxlength="15">
+                </div>
+                <button id="start-game" class="btn primary">
+                    <i class="fas fa-play"></i>
+                    Start Game
+                </button>
+            </div>
+
+            <div class="game-board-container" id="game-board-container" style="display: none;">
+                <div class="game-info">
+                    <div class="players-info">
+                        <div class="player-card player1">
+                            <div class="player-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="player-details">
+                                <span class="player-name" id="player1-display">Player 1</span>
+                                <span class="player-symbol">X</span>
+                                <span class="player-score" id="player1-score">0</span>
+                            </div>
+                        </div>
+                        
+                        <div class="vs-indicator">VS</div>
+                        
+                        <div class="player-card player2">
+                            <div class="player-avatar">
+                                <i class="fas fa-user" id="player2-icon"></i>
+                            </div>
+                            <div class="player-details">
+                                <span class="player-name" id="player2-display">Player 2</span>
+                                <span class="player-symbol">O</span>
+                                <span class="player-score" id="player2-score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="current-turn">
+                        <span id="turn-indicator">Player 1's Turn</span>
+                    </div>
+                </div>
+
+                <div class="game-board" id="game-board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+
+                <div class="game-controls">
+                    <button id="reset-round" class="btn secondary">
+                        <i class="fas fa-redo"></i>
+                        New Round
+                    </button>
+                    <button id="reset-game" class="btn secondary">
+                        <i class="fas fa-refresh"></i>
+                        Reset Game
+                    </button>
+                    <button id="change-players" class="btn secondary">
+                        <i class="fas fa-users-cog"></i>
+                        Change Players
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <div class="game-result-modal" id="game-result-modal">
+            <div class="modal-content">
+                <div class="result-icon" id="result-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2 id="result-title">Game Over!</h2>
+                <p id="result-message">Player 1 Wins!</p>
+                <div class="modal-buttons">
+                    <button id="play-again" class="btn primary">
+                        <i class="fas fa-play"></i>
+                        Play Again
+                    </button>
+                    <button id="close-modal" class="btn secondary">
+                        <i class="fas fa-times"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Modern Tic Tac Toe - Built with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
