@@ -3,7 +3,7 @@ class TicTacToe {
     constructor() {
         this.board = Array(9).fill('');
         this.currentPlayer = 'X';
-        this.gameMode = 'pvp'; // 'pvp' or 'pvc'
+        this.gameMode = 'pvp'; 
         this.gameActive = false;
         this.players = {
             X: { name: 'Player 1', score: 0 },
@@ -220,7 +220,6 @@ class TicTacToe {
     }
 
     checkGameEnd() {
-        // Check for win
         for (let combination of this.winningCombinations) {
             const [a, b, c] = combination;
             if (this.board[a] && this.board[a] === this.board[b] && this.board[a] === this.board[c]) {
@@ -232,8 +231,6 @@ class TicTacToe {
                 };
             }
         }
-
-        // Check for draw
         if (this.board.every(cell => cell !== '')) {
             return {
                 gameEnded: true,
