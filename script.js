@@ -323,7 +323,7 @@ class TicTacToe {
         this.players.O.score = 0;
         this.moveHistory = [];
         
-        // Clear board UI
+       
         document.querySelectorAll('.cell').forEach(cell => {
             cell.textContent = '';
             cell.className = 'cell';
