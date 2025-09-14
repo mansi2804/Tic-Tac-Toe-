@@ -10,7 +10,7 @@ A beautiful, responsive, and feature-rich tic-tac-toe game built with modern web
 - **Smart AI** - AI uses strategic thinking (win, block, center, corners)
 - **Win Detection** - All winning combinations properly detected
 - **Draw Detection** - Handles tie games gracefully
-
+ 
 ### 🎨 Modern UI/UX
 - **Responsive Design** - Works perfectly on desktop, tablet, and mobile
 - **Beautiful Animations** - Smooth transitions and visual feedback
